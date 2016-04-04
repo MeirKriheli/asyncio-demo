@@ -12,7 +12,11 @@ Featuring:
 - aiohttp_
 - RethinkDB_
 
-
 .. _aiohttp: http://pythonhosted.org/aiohttp/index.html
 .. _RethinkDB: https://rethinkdb.com/
 
+
+License
+-------
+
+MIT
