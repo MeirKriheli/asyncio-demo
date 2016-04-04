@@ -18,7 +18,7 @@ async def fetch_data(session, url, connection_future):
                 print('Got value %d' % int_value)
                 doc = {'sampled_at': datetime.now(pytz.utc), 'value': int_value}
                 await r.table('rand_data').insert(doc).run(connection)
-                await asyncio.sleep(1)
+                await asyncio.sleep(0.5)
 
 
 if __name__ == '__main__':
