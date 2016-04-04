@@ -17,7 +17,7 @@ async def websocket_handler(request):
     await ws.prepare(request)
 
     feed = await r.table('rand_data').changes().run(app['db'])
-    while (await feed.fetch_next()):
+    while await feed.fetch_next():
         item = await feed.next()
         record = item['new_val']
         record['sampled_at'] = int(record['sampled_at'].timestamp())
