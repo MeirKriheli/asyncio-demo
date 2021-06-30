@@ -1,4 +1,4 @@
-aiohttp==0.21.5
+aiohttp==3.7.4.post0
 chardet==2.3.0
-pytz==2016.3
-rethinkdb==2.2.0.post6
+pytz==2021.1
+rethinkdb==2.4.8
